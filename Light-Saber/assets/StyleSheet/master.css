@@ -1,0 +1,189 @@
+body {
+    min-height: 100vh;
+    height: 100%;
+    background-color: black;
+    border-bottom: 10px solid gray;
+}
+
+main {
+    height: 100%;
+    min-height: 98.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    >div {
+        position: relative;
+        width: 50px;
+        height: 200px;
+
+        &:first-of-type {
+
+            >div {
+
+                /*================== HANDLE STYLE ==================*/
+                &:first-of-type {
+                    width: 50px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-wrap: wrap;
+
+                    >div {
+                        height: 33.333%;
+                        position: relative;
+
+                        &:first-of-type {
+                            width: 100%;
+                            background-color: rgb(28, 27, 27);
+                            border-radius: 2px 2px 3px 3px;
+
+                            &::after {
+                                content: "";
+                                width: 1px;
+                                height: 100%;
+                                background-color: rgba(255, 255, 255, 0.3);
+                                position: absolute;
+                                right: 30%;
+                                bottom: 0;
+                                border-radius: 50px;
+                                box-shadow:
+                                    0 0 3px rgba(255, 255, 255, 0.765),
+                                    0 0 8px rgba(255, 255, 255, 0.57),
+                                    0 0 15px rgba(255, 255, 255, 0.401)
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            width: 70%;
+                            background-color: rgb(28, 27, 27);
+
+                            &::after {
+                                content: "";
+                                width: 1px;
+                                height: 100%;
+                                background-color: rgba(255, 255, 255, 0.3);
+                                position: absolute;
+                                right: 22%;
+                                bottom: 0;
+                                border-radius: 50px;
+                                box-shadow:
+                                    0 0 3px rgba(255, 255, 255, 0.765),
+                                    0 0 8px rgba(255, 255, 255, 0.57),
+                                    0 0 15px rgba(255, 255, 255, 0.401)
+                            }
+                        }
+
+                        &:last-of-type {
+                            width: 100%;
+                            background-color: rgb(92, 92, 92);
+                            border-radius: 3px 3px 2px 2px;
+
+                            &::after {
+                                content: "";
+                                width: 2px;
+                                height: 80%;
+                                background: rgb(255, 255, 255);
+                                position: absolute;
+                                right: 43%;
+                                bottom: 10%;
+                                border-radius: 50px;
+                                box-shadow:
+                                    0 0 3px 3px rgba(255, 255, 255, 0.813),
+                                    0 0 8px 5px rgba(255, 255, 255, 0.555),
+                                    0 0 15px 8px rgba(255, 255, 255, 0.28);
+                            }
+                        }
+                    }
+                }
+
+                /*================== GUADRDS STYLE ==================*/
+                &:nth-of-type(2) {
+                    width: 200px;
+                    height: 45px;
+                    position: absolute;
+                    top: 8px;
+                    left: calc(50% - 100px);
+                    z-index: -1;
+                    background-color: rgb(92, 92, 92);
+                    border-radius: 50% 50% 40px 40px;
+                }
+            }
+
+            &:hover {
+
+                +div {
+
+                    >div {
+                        opacity: 1;
+
+                        &:first-of-type {
+                            height: 700px;
+                        }
+
+                        &:last-of-type {
+
+                            width: 400px;
+                            left: -225px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*================== LASERS STYLE ==================*/
+        /*==================================================*/
+        &:last-of-type {
+
+            >div {
+                background-color: white;
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+
+                /*================== VERTICAL STYLE ==================*/
+                &:first-of-type {
+                    width: 20px;
+                    height: 1px;
+                    bottom: 0;
+                    left: -35px;
+                    z-index: -4;
+                    transition: 3s;
+                    border-radius: 50px;
+                    box-shadow:
+                        0 0 5px 10px rgba(255, 0, 0, 0.8),
+                        0 0 10px 15px rgba(255, 0, 0, 0.673),
+                        0 0 20px 25px rgba(255, 0, 0, 0.461);
+                }
+
+                /*================== HORIZONTAL STYLE ==================*/
+                &:last-of-type {
+                    width: 1px;
+                    height: 15px;
+                    z-index: -2;
+                    bottom: 160px;
+                    left: -25px;
+                    transition: 2s;
+                    border-radius: 50px;
+                    border-radius: 50px;
+                    box-shadow:
+                        0 0 5px 5px rgba(255, 0, 0, 0.8),
+                        0 0 10px 8px rgba(255, 0, 0, 0.673),
+                        0 0 20px 15px rgba(255, 0, 0, 0.461);
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 200px;
+        height: 170px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 100px);
+        z-index: -3;
+    }
+}

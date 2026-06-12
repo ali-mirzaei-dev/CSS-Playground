@@ -1,0 +1,305 @@
+body {
+    background-color: #483d8b;
+    height: 100%;
+    min-height: 100vh;
+}
+
+
+main {
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    >div {
+        display: flex;
+        color: white;
+
+        >div {
+            display: flex;
+
+            /*================== LOGO STYLE ==================*/
+            &:first-of-type {
+                width: 10%;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                position: relative;
+
+                >img {
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                }
+            }
+
+            /*================== SLIDER STYLE ==================*/
+            &:last-of-type {
+                width: 90%;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+                >figure {
+                    width: 100px;
+                    height: 100px;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    >figcaption {
+                        margin-top: 50px;
+
+                        >h6 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4),
+        &:last-of-type {
+            &:hover {
+
+                >div {
+
+                    &:last-of-type {
+                        left: 10%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+
+                    position: absolute;
+                    left: 0;
+                    cursor: pointer;
+                }
+
+                /*================== SLIDER STYLE ==================*/
+                &:last-of-type {
+
+                    position: absolute;
+                    top: 0;
+                    left: 200%;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 1s;
+
+                    >figure {
+                        width: 100px;
+                        height: 100px;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+
+                        >figcaption {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /*================== FIRST STYLE ============-======*/
+        /*==================================================*/
+        &:first-of-type {
+
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+                    margin-top: 15%;
+                }
+            }
+        }
+
+        /*================== SECOND STYLE ==================*/
+        /*==================================================*/
+        &:nth-of-type(2) {
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+                    top: 40%;
+                }
+
+                /*================== SLIDER STYLE ==================*/
+                &:last-of-type {
+                    background-color: #ff6347;
+                }
+            }
+        }
+
+        /*================== THIRD STYLE ===================*/
+        /*==================================================*/
+        &:nth-of-type(3) {
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+                    top: 50%;
+                }
+
+                /*================== SLIDER STYLE ==================*/
+                &:last-of-type {
+                    background-color: #ffd700;
+                }
+            }
+        }
+
+        /*================== FOURTH STYLE ===================*/
+        /*==================================================*/
+        &:nth-of-type(4) {
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+                    top: 60%;
+                }
+
+                /*================== SLIDER STYLE ==================*/
+                &:last-of-type {
+                    background-color: #ff1493;
+                }
+            }
+        }
+
+
+        /*================== LAST STYLE ===================*/
+        /*==================================================*/
+        &:last-of-type {
+
+            &:hover {
+                >div {
+
+                    &:last-of-type {
+
+                        >figure {
+
+                            &:hover {
+                                height: 600px;
+
+                                >ul {
+
+                                    >li {
+                                        bottom: 5%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            >div {
+
+                /*================== LOGO STYLE ==================*/
+                &:first-of-type {
+                    top: 70%;
+                }
+
+                /*================== SLIDER STYLE ==================*/
+                &:last-of-type {
+                    background-color: #4a4a4a;
+
+                    >figure {
+                        height: 500px;
+                        width: 400px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #8f8f8f;
+                        border-radius: 50px;
+                        transition: 0.4s;
+                        position: relative;
+
+                        >img {
+                            width: 280px;
+                            height: 280px;
+                            border-radius: 50%;
+                        }
+
+                        >figcaption {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            margin: 0;
+
+                            >* {
+                                width: 100%;
+                            }
+
+                            >h6 {
+                                text-transform: uppercase;
+                            }
+
+                            >p {
+                                opacity: 0.6;
+                            }
+                        }
+
+                        /*================== SOCIALS STYLE ==================*/
+                        >ul {
+                            width: 100px;
+
+                            >li {
+                                height: 30px;
+                                position: absolute;
+                                bottom: -500px;
+
+                                &:first-of-type {
+                                    left: 20%;
+                                    transition: 0.8s;
+                                }
+
+                                &:nth-of-type(2) {
+                                    left: 38%;
+                                    transition: 1.2s;
+                                }
+
+                                &:nth-of-type(3) {
+                                    left: 60%;
+                                    transition: 1.8s;
+                                }
+
+                                &:last-of-type {
+                                    left: 80%;
+                                    transition: 2.2s;
+                                }
+
+                                >a {
+                                    >img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
