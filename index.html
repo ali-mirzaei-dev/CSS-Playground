@@ -6,73 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Playground</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
             background: #0f0f14;
             color: white;
-            margin: 0;
-            padding: 40px;
             text-align: center;
+            padding: 40px 20px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            opacity: .7;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .new-tricks {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            padding: 25px;
+            background: #171720;
+            border: 1px solid #2b2b38;
+            border-radius: 20px;
+        }
+
+        .new-tricks h2 {
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .featured {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .featured a {
+            text-decoration: none;
+            color: white;
+            background: #232332;
+            padding: 12px 20px;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .featured a:hover {
+            background: #303047;
+            transform: translateY(-3px);
+        }
+
+        .section-title {
+            margin-bottom: 25px;
+        }
+
+        .tricks-grid {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1c1c26;
+            text-decoration: none;
+            color: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            transition: .3s;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: #252533;
+            border-color: #404060;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card h3 {
             margin-bottom: 10px;
         }
 
-        p {
-            opacity: 0.7;
-            margin-bottom: 30px;
-
-            &:last-of-type {
-                margin-top: 30px;
-                opacity: 0.6;
-                font-style: italic;
-            }
+        .card p {
+            opacity: .7;
+            font-size: .9rem;
+            line-height: 1.6;
         }
 
-        h2 {
+        .coming-soon {
+            margin-top: 50px;
+            opacity: .6;
+            font-style: italic;
+        }
+
+        footer {
             margin-top: 40px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 15px 0;
-        }
-
-        a {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #1c1c26;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        a:hover {
-            background: #2a2a3a;
-            scale: 1.05;
+            opacity: .5;
+            font-size: .9rem;
         }
     </style>
 </head>
 
 <body>
     <h1>🎨 CSS Playground</h1>
-    <p>My collection of CSS tricks and UI experiments</p>
-
-    <h2>My Tricks</h2>
-
-    <ul>
-        <li><a href="./Apple-Keyboard/index.html">⌨️ Apple Keyboard</a></li>
-        <li><a href="./Audio-fx/index.html">🔥 Audio FX</a></li>
-    </ul>
-
-    <p>✨ Homepage styling coming soon...</p>
+    <p class="subtitle"> My collection of CSS tricks, UI experiments, animations and creative front-end components. </p>
+    <section class="new-tricks">
+        <h2>🆕 New This Week</h2>
+        <div class="featured"> <a href="./Light-Saber/index.html">🤺 Light Saber</a> <a
+                href="./Navigation-Menu/index.html">🧭 Navigation Menu</a> </div>
+    </section>
+    <h2 class="section-title">My Tricks</h2>
+    <section class="tricks-grid"> <a class="card" href="./Apple-Keyboard/index.html"> <span class="emoji">⌨️</span>
+            <h3>Apple Keyboard</h3>
+            <p>Realistic Apple-inspired keyboard built using HTML and CSS.</p>
+        </a> <a class="card" href="./Audio-fx/index.html"> <span class="emoji">🔥</span>
+            <h3>Audio FX</h3>
+            <p>Creative visual effects and animation experiments.</p>
+        </a> <a class="card" href="./Light-Saber/index.html"> <span class="emoji">🤺</span>
+            <h3>Light Saber</h3>
+            <p>Interactive lightsaber effect created with pure CSS.</p>
+        </a> <a class="card" href="./Navigation-Menu/index.html"> <span class="emoji">🧭</span>
+            <h3>Navigation Menu</h3>
+            <p>Animated navigation menu component and hover effects.</p>
+        </a> </section>
+    <p class="coming-soon"> ✨ Homepage styling upgrades, screenshots and more tricks coming soon... </p>
+    <footer> Developed by Ali Mirzaei • New CSS tricks added every week 🚀 </footer>
 </body>
 
 </html>
