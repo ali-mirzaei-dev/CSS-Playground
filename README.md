@@ -12,40 +12,6 @@ This repository is used to explore modern UI design, animations, and creative CS
 
 ---
 
-## 📁 Projects
-
-### 🤺 Light Saber
-A CSS experiment inspired by a futuristic lightsaber effect.
-
-👉 Live Demo:  
-https://ali-mirzaei-dev.github.io/CSS-Playground/Light-Saber/
-
----
-
-### 🧭 Navigation Menu
-A modern animated navigation menu built with HTML and CSS.
-
-👉 Live Demo:  
-https://ali-mirzaei-dev.github.io/CSS-Playground/Navigation-Menu/
-
----
-
-### ⌨️ Apple Keyboard
-A realistic keyboard UI built using HTML and CSS only.
-
-👉 Live Demo:  
-https://ali-mirzaei-dev.github.io/CSS-Playground/Apple-Keyboard/
-
----
-
-### 🔥 Audio FX
-A creative UI and animation-based project focused on visual effects and styling practice.
-
-👉 Live Demo:  
-https://ali-mirzaei-dev.github.io/CSS-Playground/Audio-fx/
-
----
-
 ## 🛠️ Technologies Used
 
 - HTML5  
