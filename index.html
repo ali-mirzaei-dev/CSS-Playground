@@ -4,223 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Playground</title>
+    <title>Ali Mirzaei · CSS Playground</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            background-color: #0f0f14;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-
-            >h1 {
-                font-size: clamp(2.5rem, 6vw, 4rem);
-                margin-bottom: 15px;
-            }
-
-            >p {
-
-                &:first-of-type {
-                    max-width: 700px;
-                    margin: 0 auto 40px;
-                    line-height: 1.7;
-                    opacity: .7;
-                }
-
-                &:last-of-type {
-                    margin-top: 50px;
-                    opacity: .6;
-                    font-style: italic;
-                }
-            }
-
-            /*================== NEW TRICKS ==================*/
-
-            >section {
-
-                &:first-of-type {
-                    max-width: 700px;
-                    margin: 0 auto 50px;
-                    padding: 25px;
-                    background-color: #171720;
-                    border: 1px solid #2b2b38;
-                    border-radius: 20px;
-
-                    >h2 {
-                        color: gold;
-                        margin-bottom: 20px;
-                    }
-
-                    >div {
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                        gap: 15px;
-
-                        >a {
-                            text-decoration: none;
-                            color: white;
-                            background-color: #232332;
-                            padding: 12px 20px;
-                            border-radius: 10px;
-                            transition: .4s;
-
-                            &:hover {
-                                background-color: #303047;
-                                scale: 1.05;
-                            }
-                        }
-                    }
-                }
-
-                /*================== TRICKS ==================*/
-
-                &:last-of-type {
-                    width: 100%;
-                    max-width: 1000px;
-                    margin: auto;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 20px;
-
-                    >a {
-                        width: 220px;
-                        min-height: 230px;
-                        background-color: #1c1c26;
-                        border-radius: 15px;
-                        text-decoration: none;
-                        color: white;
-                        padding: 30px 20px;
-                        border: 1px solid transparent;
-                        transition: .4s;
-
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-content: flex-start;
-                        justify-content: center;
-
-                        &:hover {
-                            scale: 1.05;
-                            background-color: #252533;
-                            border-color: #404060;
-                        }
-
-                        >span {
-                            width: 100%;
-                            font-size: 3rem;
-                            margin-bottom: 15px;
-                        }
-
-                        >h3 {
-                            width: 100%;
-                            margin-bottom: 10px;
-                        }
-
-                        >p {
-                            width: 100%;
-                            font-size: .9rem;
-                            line-height: 1.6;
-                            opacity: .7;
-                        }
-                    }
-                }
-            }
-
-            >h2 {
-                margin-bottom: 25px;
-            }
-
-            >footer {
-                margin-top: 40px;
-                opacity: .5;
-                font-size: .9rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/StyleSheet/public.css">
+    <link rel="stylesheet" href="assets/StyleSheet/master.css">
 </head>
 
-<!--============================================================   HTML   =============================================================-->
-<!--===================================================================================================================================-->
-
 <body>
-
-    <h1>🎨 CSS Playground</h1>
-
-    <p>
-        My collection of CSS tricks, UI experiments, animations and creative front-end
-        components.
-    </p>
-
-    <section>
-        <!--================== NEW TRICKS HTML ==================-->
-        <!--==================================================-->
-        <h2>🆕 New This Week</h2>
-
+    <!--==================#1 MENU HTML ==================-->
+    <!--==================================================-->
+    <aside>
+        <!--==================#1-1 LOGO HTML ==================-->
         <div>
-            <a href="./Hogwarts-Ticket/index.html">🎫 Hogwarts Ticket</a>
-            <a href="./Shelf/index.html">📚 Shelf</a>
+            <figure>
+                <img src="assets/Images/Avatar.png" alt="Avatar">
+                <figcaption>
+                    <span>frontend developer</span>
+                    <p>ali mirzaei</p>
+                </figcaption>
+            </figure>
+
         </div>
 
-    </section>
+        <!--==================#1-2 NAV HTML ==================-->
+        <nav>
+            <ul>
+                <li><a title="go to recently added trics" href="#new"><span>✨</span> <span>new</span></a></li>
+                <li><a title="go to editors favorite picks" href="#fav"><span>⭐</span> <span>favorites</span></a></li>
+                <li><a title="go to editors collection " href="#collection"><span>📚</span> <span>collection</span></a>
+                </li>
+                <li><a title="go to top" href="#top"><span>🏠</span> <span>top</span></a></li>
+            </ul>
+        </nav>
 
-    <h2>My Tricks</h2>
+        <!--==================#1-3 SOCIALS HTML ==================-->
+        <div>
+            <p>check out my other works</p>
+            <ul>
+                <li>
+                    <a title="Github" href="https: //github.com/ali-mirzaei-dev">
+                        <img src="assets/Images/github logo.png" alt="github logo">
+                    </a>
+                </li>
 
-    <section>
+                <li>
+                    <a title="Gmail" href="mailto:ali.mirzaei.kt@gmail.com">
+                        <img src="assets/Images/gmail logo2.png" alt="gmail logo">
+                    </a>
+                </li>
 
-        <a href="./Apple-Keyboard/index.html">
-            <span>⌨️</span>
-            <h3>Apple Keyboard</h3>
-            <p>Realistic Apple-inspired keyboard built using HTML and CSS.</p>
-        </a>
+                <li>
+                    <a title="Instagram" href="https: //instagram.com/ali.mirzaei.dev">
+                        <img src="assets/Images/instagram logo2.png" alt="instagram logo">
+                    </a>
+                </li>
 
-        <a href="./Audio-fx/index.html">
-            <span>🔥</span>
-            <h3>Audio FX</h3>
-            <p>Creative visual effects and animation experiments.</p>
-        </a>
+                <li>
+                    <a title="Linkdin" href="#">
+                        <img src="assets/Images/linkdin logo2.png" alt="linkdin logo">
+                    </a>
+                </li>
 
-        <a href="./Light-Saber/index.html">
-            <span>🤺</span>
-            <h3>Light Saber</h3>
-            <p>Interactive lightsaber effect created with pure CSS.</p>
-        </a>
+            </ul>
+        </div>
 
-        <a href="./Navigation-Menu/index.html">
-            <span>🧭</span>
-            <h3>Navigation Menu</h3>
-            <p>Animated navigation menu component and hover effects.</p>
-        </a>
 
-        <a href="./Shelf/index.html">
-            <span>📚</span>
-            <h3>Shelf</h3>
-            <p> Practice CSS Grid by building a shelf-style component layout.</p>
-        </a>
 
-        <a href="./Hogwarts-Ticket/index.html">
-            <span>🎫</span>
-            <h3>Hogwarts Ticket</h3>
-            <p> A train ticket layout experiment using CSS Grid.</p>
-        </a>
-    </section>
 
-    <p>
-        ✨ Homepage styling upgrades, screenshots and more tricks coming soon...
-    </p>
 
-    <footer>
-        Developed by Ali Mirzaei • New CSS tricks added every week 🚀
-    </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </aside>
+
+
+    <main class="row">
+
+        <!--==================#2 PORTFOLIO HTML ==================-->
+        <!--========================================================-->
+        <header id="top">
+            <div>
+                <div>
+                    <p>A Frontend developer & CSS enthusiast that</p>
+                    <p>Turns code into creative playgrounds</p>
+                </div>
+                <figure>
+                    <img src="assets/Images/My picture.png" alt="develper's picture">
+                    <figcaption>ali mirzaei</figcaption>
+                </figure>
+            </div>
+        </header>
+
+        <!--==================#3 CONTENTS HTML =====================-->
+        <!--========================================================-->
+
+        <section>
+            <!--==================#3-1 NEW TRICKS HTML ==================-->
+            <div id="new">
+                <div>
+                    <h2>new tricks</h2>
+                    <span>This week's playground</span>
+                </div>
+
+                <div>
+                    <a title="visit Light Saber " href="Light-Saber/index.html">
+                        <figure>
+                            <img src="assets/Images/Light Saber.png" alt="Light Saber">
+                        </figure>
+                        <p>Light Saber</p>
+                        <span>⚡ CSS . Animation</span>
+                    </a>
+
+                    <a title="visit Shelf " href="Shelf/index.html">
+                        <figure>
+                            <img src="assets/Images/Shelf.png" alt="Shelf">
+                        </figure>
+                        <p>Shelf</p>
+                        <span>📐 CSS . Grid</span>
+
+                    </a>
+
+                    <a title="visit Hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                        <figure><img src="assets/Images/TICKET.png" alt="Hogwart's ticket"></figure>
+                        <p>Hogwart's ticket</p>
+                        <span>📐 CSS . Grid</span>
+
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!--==================#3-2 FAVORITES HTML ==================-->
+            <div id="fav">
+                <div>
+                    <h2>my favorites</h2>
+                </div>
+
+                <div>
+                    <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                        <figure>
+                            <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
+                            <figcaption>hogwart's ticket</figcaption>
+                        </figure>
+
+                    </a>
+                    <a title="visit apple keyboard " href="Apple-Keyboard/index.html">
+                        <figure>
+                            <img src="assets/Images/Keyboard.png" alt="apple keyboard">
+                            <figcaption>apple keyboard</figcaption>
+                        </figure>
+
+                    </a>
+                </div>
+
+
+
+            </div>
+
+
+            <!--==================#3-3 COLLECTION HTML ==================-->
+            <div id="collection">
+                <div>
+                    <h2>collection</h2>
+                </div>
+                <div>
+                    <a title="visit apple keyboard " href="Apple-Keyboard/index.html">
+                        <figure>
+                            <img src="assets/Images/Keyboard.png" alt="apple keyboard">
+                            <figcaption>
+                                <p>apple keyboard</p>
+                                <p>Apple keyboard with flex grow</p>
+                                <span>added: 22 may 2026 </span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a title="visit audio FX " href="Audio-fx/index.html">
+                        <figure>
+                            <img src="assets/Images/Audio.png" alt="audio FX">
+                            <figcaption>
+                                <p>audio FX</p>
+                                <p>Creative audio visual effects</p>
+                                <span>added: 24 may 2026</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a title="visit navigation menu " href="Navigation-Menu/index.html">
+                        <figure>
+                            <img src="assets/Images/Menu.png" alt="navigation menu">
+                            <figcaption>
+                                <p>navigation menu</p>
+                                <p>Animated nav menu with hovers</p>
+                                <span>added: 11 jun 2026</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a title="visit light saber " href="Light-Saber/index.html">
+                        <figure>
+                            <img src="assets/Images/Light Saber.png" alt="light saber">
+                            <figcaption>
+                                <p>light saber</p>
+                                <p>Interactive CSS lightsaber effect</p>
+                                <span>added: 12 jun 2026</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a title="visit shelf " href="Shelf/index.html">
+                        <figure>
+                            <img src="assets/Images/Shelf.png" alt="Shelf">
+                            <figcaption>
+                                <p>shelf</p>
+                                <p>CSS grid bookshelf layout</p>
+                                <span>added:14 jun 2026</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                        <figure>
+                            <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
+                            <figcaption>
+                                <p>hogwart's ticket</p>
+                                <p>CSS grid train ticket design </p>
+                                <span>added:15 jun 2026</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================#4 FOOTER HTML =======================-->
+        <!--========================================================-->
+
+        <footer>
+            <p>
+                © 2026 Ali Mirzaei · Made with <span>♥</span> and CSS
+            </p>
+        </footer>
+
+    </main>
 </body>
 
 </html>
