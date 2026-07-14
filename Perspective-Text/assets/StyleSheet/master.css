@@ -1,0 +1,83 @@
+body {
+    background-color: #5138be;
+}
+
+main {
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotate3d(39, 25, -25, 73deg);
+
+    >div {
+        width: max-content;
+        text-transform: uppercase;
+        color: white;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.5s;
+
+        &:first-of-type {
+            transform: perspective(900px) translate(-50%, -263%) rotateX(-104deg) rotateY(5deg);
+        }
+
+        &:nth-of-type(2) {
+            transform: perspective(900px) translate(-37%, -195%) rotateX(0deg) rotateY(-5deg);
+            transition-delay: 0.2s;
+        }
+
+        &:nth-of-type(3) {
+            transform: perspective(900px) translate(-45%, -118%) rotateX(-105deg) rotateY(5deg);
+            transition-delay: 0.3s;
+        }
+
+        &:nth-of-type(4) {
+            transform: perspective(900px) translate(-228%, -18%) rotateX(0deg) rotateY(-5deg);
+            transition-delay: 0.4s;
+        }
+
+        &:nth-of-type(5) {
+            transform: perspective(900px) translate(-213%, 54%) rotateX(-91deg) rotateY(10deg);
+            transition-delay: 0.5s;
+        }
+
+        &:last-of-type {
+            transform: perspective(900px) translate(-91%, 118%) rotateZ(-3deg) rotateY(-5deg);
+            transition-delay: 0.6s;
+        }
+    }
+
+    &:hover {
+
+        >div {
+            &:first-of-type {
+                transform: perspective(900px) translate(-45%, -332%) rotateX(0deg) rotateY(-4deg);
+            }
+
+            &:nth-of-type(2) {
+                transform: perspective(900px) translate(-37%, -271%) rotateX(-112deg) rotateY(5deg);
+            }
+
+            &:nth-of-type(3) {
+                transform: perspective(900px) translate(-41%, -195%) rotateX(2deg) rotateY(-5deg);
+            }
+
+            &:nth-of-type(4) {
+                transform: perspective(900px) translate(-228%, -101%) rotateX(-105deg) rotateY(4deg) rotateZ(-2deg);
+            }
+
+            &:nth-of-type(5) {
+                transform: perspective(900px) translate(-213%, -32%) rotateX(4deg) rotateY(-5deg);
+            }
+
+            &:last-of-type {
+                transform: perspective(900px) translate(-91%, 26%) rotateX(-101deg) rotateY(10deg)rotateZ(4deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+body {
+    background-color: #111720;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+
+    >ul {
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transform: perspective(900px) rotateX(85deg);
+        position: relative;
+
+        li {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 155px;
+            display: flex;
+            transform-origin: bottom;
+            transition: transform 1.3s ease-in 0s;
+
+            >a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: white !important;
+                border-radius: 10px;
+                border: 2px solid white;
+                background: #ffffff;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(88, 88, 187, 1) 100%);
+            }
+
+            &:first-of-type {
+                transform: rotateX(-70deg) translate(-50%, -50%) translateZ(-200px) scale(0.4) rotateY(-90deg);
+            }
+
+            &:nth-of-type(2) {
+                transform: rotateX(-70deg) translate(-50%, -50%) translateZ(-200px) scale(0.4) rotateY(-90deg);
+            }
+
+            &:nth-of-type(3) {
+                transform: rotateX(-60deg) translate(-50%, -10%);
+            }
+
+            &:nth-of-type(4) {
+                transform: rotateX(-70deg) translate(-50%, -50%) translateZ(-200px) scale(0.4) rotateY(+90deg);
+            }
+
+            &:last-of-type {
+                transform: rotateX(-70deg) translate(-50%, -50%) translateZ(-200px) scale(0.4) rotateY(+90deg);
+            }
+        }
+
+
+    }
+
+    &:hover {
+
+        >ul {
+            >li {
+                opacity: 1;
+                visibility: visible;
+
+                &:first-of-type {
+                    transform: rotateX(-90deg) translate(-290%, -50%);
+                }
+
+                &:nth-of-type(2) {
+                    transform: rotateX(-90deg) translate(-170%, -50%);
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotateX(-90deg) translate(-50%, -50%);
+                }
+
+                &:nth-of-type(4) {
+                    transform: rotateX(-90deg) translate(70%, -50%);
+
+                }
+
+                &:last-of-type {
+                    transform: rotateX(-90deg) translate(190%, -50%);
+
+                }
+            }
+        }
+    }
+
+}
