@@ -147,6 +147,7 @@
 
                             >span {
                                 color: var(--cream);
+
                             }
                         }
 
@@ -169,6 +170,137 @@
                             &::before {
                                 opacity: 1;
                                 width: 100%;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            z-index: 3;
+
+                            >a {
+                                >i {
+                                    color: var(--cream);
+                                    margin-top: 3px;
+                                    transition: 0.4s;
+                                }
+                            }
+
+                            >ul {
+                                width: 51%;
+                                padding: 0px 0 0px 30px;
+                                border-radius: 0 0 8px 8px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                color: var(--cream);
+                                font-size: 14px;
+                                opacity: 1;
+                                position: absolute;
+                                top: 30px;
+                                left: 116px;
+                                background-color: var(--green);
+                                z-index: 3;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: 0.4s;
+                                transition-delay: 0.2s;
+                                transform: scaleY(0);
+                                transform-origin: top;
+
+                                >li {
+                                    width: 100%;
+                                    position: relative;
+                                    padding: 10px;
+                                    transition: 0.4s;
+
+                                    &::before {
+                                        content: "";
+                                        width: 1%;
+                                        height: 20px;
+                                        position: absolute;
+                                        left: 0%;
+                                        top: 20%;
+                                        background-color: var(--green);
+                                        opacity: 0;
+                                        transition: 0.4s;
+                                        z-index: -1;
+                                        border-radius: 50px;
+                                    }
+
+                                    &:hover {
+
+                                        color: var(--gray);
+                                        font-weight: bold;
+
+                                        &::before {
+                                            opacity: 1;
+                                            width: 80%;
+                                        }
+
+                                        &::after {
+                                            border-left: 2px solid var(--gray);
+                                            border-bottom: 2px solid var(--gray);
+                                        }
+                                    }
+
+                                    &::after {
+                                        content: "";
+                                        width: 20px;
+                                        height: 20px;
+                                        border-left: 2px solid var(--cream);
+                                        border-bottom: 2px solid var(--cream);
+                                        border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%;
+                                        position: absolute;
+                                        left: -17px;
+                                        top: 0;
+                                        transition: 0.4s;
+                                    }
+                                }
+
+                                &::after {
+                                    content: "";
+                                    width: 2px;
+                                    height: 80px;
+                                    background-color: var(--cream);
+                                    position: absolute;
+                                    left: 13px;
+                                    top: -4px;
+                                }
+                            }
+
+                            &::before {
+                                content: "";
+                                width: 1%;
+                                height: 30px;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background-color: var(--green);
+                                opacity: 0;
+                                transition: 0.8s;
+                                border-radius: 50px 50px 0 50px;
+                                z-index: -1;
+                            }
+
+
+
+                            &:hover {
+                                >a {
+                                    >i {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+
+                                >ul {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: scaleY(1);
+
+                                }
+
+                                &::before {
+                                    opacity: 1;
+                                    width: 99%;
+                                }
                             }
                         }
                     }
@@ -325,6 +457,9 @@
                 background-color: var(--black);
                 position: relative;
                 padding: 80px 50px 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: start;
 
                 &::before {
                     content: "";
@@ -338,121 +473,35 @@
                 }
 
                 >div {
+                    width: 100%;
+
+
 
                     h2 {
-                        text-transform: capitalize;
+                        text-transform: uppercase;
                         color: var(--cream);
-                    }
+                        font-size: 25px;
 
-                    /*==================#3-1 NEW TRICKS STYLE ==================*/
-                    &:first-of-type {
-                        padding-bottom: 70px;
-                        border-bottom: 2px solid var(--green);
-
-                        >div {
-
-                            /*======= TITLE STYLE =======*/
-                            &:first-of-type {
-                                line-height: 1.5;
-
-                                span {
-                                    color: var(--cream);
-                                }
-                            }
-
-                            /*======= CARDS STYLE =======*/
-                            &:last-of-type {
-                                width: 100%;
-                                display: flex;
-                                column-gap: 20px;
-                                margin-top: 50px;
-
-
-                                >a {
-                                    height: 250px;
-                                    flex: 1;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    justify-content: center;
-                                    align-content: start;
-                                    padding: 20px;
-                                    background-color: var(--gray);
-                                    border-radius: 15px;
-                                    transition: 0.4s;
-                                    position: relative;
-
-
-                                    >* {
-                                        color: var(--cream);
-                                        text-align: center;
-                                        text-transform: capitalize;
-                                    }
-
-                                    >figure {
-
-                                        width: 240px;
-
-                                        >img {
-                                            width: 100%;
-                                            height: 100%;
-                                            object-fit: contain;
-                                            border: 2px solid var(--cream);
-                                            border-radius: 8px;
-                                        }
-                                    }
-
-
-                                    >p {
-                                        width: 100%;
-                                        margin: 25px 0 10px 0;
-                                        font-size: 20px;
-                                        letter-spacing: 1px;
-                                    }
-
-                                    >span {
-                                        width: 100%;
-                                        font-size: 12px;
-                                        text-transform: capitalize;
-                                    }
-
-
-                                    &:hover {
-                                        scale: 1.02;
-                                    }
-
-                                    &::after {
-                                        content: "NEW";
-                                        position: absolute;
-                                        top: 10px;
-                                        right: 10px;
-                                        font-size: 13px;
-                                        background-color: var(--green);
-                                        padding: 2px 10px;
-                                        color: var(--cream);
-                                        border-radius: 12px;
-                                    }
-
-
-
-                                }
-
-                            }
-
+                        >i {
+                            margin-right: 15px;
+                            color: goldenrod;
                         }
                     }
 
-                    /*==================#3-2 FAVORITES STYLE ==================*/
-                    &:nth-of-type(2) {
-                        margin-top: 70px;
+                    /*==================#3-1 FAVORITES STYLE ==================*/
+                    &:first-of-type {
+                        margin-top: 50px;
                         padding-bottom: 70px;
                         border-bottom: 2px solid var(--green);
 
                         >div {
+
+                            >h2 {}
 
                             &:last-of-type {
                                 display: flex;
                                 flex-wrap: wrap;
-                                column-gap: 20px;
+                                gap: 20px;
                                 margin-top: 50px;
 
                                 >a {
@@ -537,9 +586,194 @@
 
                     }
 
-                    /*==================#3-3 COLLECTIONS STYLE ==================*/
+                    /*==================#3-2 CATEGORY STYLE ==================*/
+                    &:nth-of-type(2) {
+                        margin-top: 50px;
+                        padding-bottom: 70px;
+                        border-bottom: 2px solid var(--green);
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: start;
+                        row-gap: 50px;
+
+                        >div {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: start;
+
+                            /*======= TITLE 1 STYLE =======*/
+                            &:first-of-type {
+                                line-height: 1.5;
+                                row-gap: 5px;
+
+                                >h2 {
+                                    width: 100%;
+                                }
+
+                                >span {
+                                    color: var(--cream);
+                                    padding-bottom: 15px;
+                                }
+                            }
+
+                            /*======= CONTENT 1 STYLE =======*/
+                            &:last-of-type {
+                                row-gap: 10px;
+
+                                /* all categories */
+                                >div {
+                                    width: 100%;
+                                    padding: 30px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    align-content: start;
+                                    row-gap: 30px;
+
+
+                                    >div {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-content: start;
+
+                                        /* title 2 */
+                                        &:first-of-type {
+                                            row-gap: 10px;
+
+                                            >h4 {
+                                                width: 100%;
+                                                color: var(--cream);
+                                                font-size: 19px;
+                                                text-transform: capitalize;
+                                                letter-spacing: 1.2px;
+
+                                                >i {
+                                                    color: gold;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+
+                                            >span {
+                                                font-size: 15px;
+                                                padding-left: 30px;
+                                                color: var(--cream);
+
+                                                >i {
+                                                    color: gold;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+
+                                        /* cards */
+                                        &:last-of-type {
+                                            gap: 20px;
+                                            padding-left: 30px;
+
+                                            >a {
+                                                width: 23%;
+                                                max-width: 250px;
+                                                transition: 0.4s;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: 10px;
+
+                                                >figure {
+                                                    border: 1px solid rgba(105, 117, 101, 0.7);
+                                                    border-radius: 10px;
+                                                    width: 250px;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    row-gap: 10px;
+                                                    text-transform: capitalize;
+                                                    text-align: center;
+                                                    position: relative;
+                                                    transition: 0.4s;
+
+                                                    >img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;
+                                                        border-radius: 10px 10px 0 0;
+                                                    }
+
+                                                    >figcaption {
+                                                        width: 100%;
+
+                                                        >p {
+                                                            color: var(--cream);
+                                                            padding-bottom: 10px;
+                                                        }
+
+                                                        >span {
+                                                            position: absolute;
+                                                            top: 0%;
+                                                            left: 0%;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            border-radius: 10px;
+                                                            background-color: rgba(105, 117, 101, 0.7);
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            color: var(--cream);
+                                                            font-size: 60px;
+                                                            transition: 0.4s;
+                                                            padding-bottom: 30px;
+                                                        }
+                                                    }
+                                                }
+
+                                                &:hover {
+                                                    transform: scale(1.1);
+                                                    box-shadow: 0px 57px 86px -55px rgba(236, 223, 204, 0.75);
+
+                                                    >figure {
+                                                        transform: translateY(-0px);
+
+                                                        >figcaption {
+
+                                                            >span {
+                                                                opacity: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+
+
+
+
+                                    /* category 1 */
+                                    &:first-of-type {
+                                        border-bottom: 2px solid var(--green);
+                                    }
+
+                                    /* category 2 */
+                                    &:nth-of-type(2) {}
+
+                                    /* category 3 */
+                                    &:nth-of-type(3) {}
+
+                                    /* category 4 */
+                                    &:nth-of-type(4) {}
+                                }
+
+
+
+                            }
+                        }
+                    }
+
+                    /*==================#3-3 ALL TRICKS STYLE ==================*/
                     &:last-of-type {
-                        margin-top: 70px;
+                        margin-top: 50px;
                         padding-bottom: 70px;
                         border-bottom: 2px solid var(--green);
 
