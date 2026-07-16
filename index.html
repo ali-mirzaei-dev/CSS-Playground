@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets/StyleSheet/public.css">
     <link rel="stylesheet" href="assets/StyleSheet/master.css">
+    <link rel="stylesheet" href="assets/Font/font2/style.css">
 </head>
 
 <body>
@@ -29,11 +30,24 @@
         <!--==================#1-2 NAV HTML ==================-->
         <nav>
             <ul>
-                <li><a title="go to recently added trics" href="#new"><span>✨</span> <span>new</span></a></li>
-                <li><a title="go to editors favorite picks" href="#fav"><span>⭐</span> <span>favorites</span></a></li>
-                <li><a title="go to editors collection " href="#collection"><span>📚</span> <span>collection</span></a>
+                <li>
+                    <a title="go to editors favorite picks" href="#fav"><span>⭐</span> <span>favorites</span></a>
                 </li>
-                <li><a title="go to top" href="#top"><span>🏠</span> <span>top</span></a></li>
+                <li>
+                    <a href="#new"><span>🏷️</span> <span>Category</span> <i
+                            class="icon"></i></a>
+                    <ul>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#Transform">Transform</a></li>
+                        <li><a href="#Animation">Animation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a title="go to editors collection " href="#collection"><span>📚</span> <span>All Tricks</span></a>
+                </li>
+                <li>
+                    <a title="go to top" href="#top"><span>🏠</span> <span> Back to Top </span></a>
+                </li>
             </ul>
         </nav>
 
@@ -67,28 +81,6 @@
 
             </ul>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </aside>
 
 
@@ -113,46 +105,11 @@
         <!--========================================================-->
 
         <section>
-            <!--==================#3-1 NEW TRICKS HTML ==================-->
-            <div id="new">
-                <div>
-                    <h2>new tricks</h2>
-                    <span>This week's playground</span>
-                </div>
-
-                <div>
-                    <a title="visit Book " href="Book/index.html">
-                        <figure>
-                            <img src="assets/Images/Book.png" alt="Book">
-                        </figure>
-                        <p>Book</p>
-                        <span>⚡ CSS . 3D transform</span>
-                    </a>
-
-                    <a title="visit Steam-Games " href="Steam-Games/index.html">
-                        <figure>
-                            <img src="assets/Images/Steam-Games.png" alt="Steam-Games">
-                        </figure>
-                        <p>Shelf</p>
-                        <span>📐 CSS . Transform</span>
-
-                    </a>
-
-                    <a title="visit Hogwart's ticket " href="Hogwarts-Ticket/index.html">
-                        <figure><img src="assets/Images/TICKET.png" alt="Hogwart's ticket"></figure>
-                        <p>Hogwart's ticket</p>
-                        <span>📐 CSS . Grid</span>
-
-                    </a>
-
-
-                </div>
-            </div>
 
             <!--==================#3-2 FAVORITES HTML ==================-->
             <div id="fav">
                 <div>
-                    <h2>my favorites</h2>
+                    <h2><i class="icon"></i> my favorites</h2>
                 </div>
 
                 <div>
@@ -191,10 +148,182 @@
             </div>
 
 
-            <!--==================#3-3 COLLECTION HTML ==================-->
+
+            <!--==================#3-1 CATEGORY HTML ==================-->
+
+
+            <div id="new">
+
+                <!-- title 1 -->
+                <div>
+                    <h2><i class="icon"></i> Category</h2>
+                    <span>Explore CSS tricks organized by category.</span>
+                </div>
+
+                <!-- content 1 -->
+                <div>
+
+                    <!-- category 1 : layout -->
+                    <div id="layout">
+
+                        <!-- title 2-->
+                        <div>
+                            <h4><i class="icon"></i> layout</h4>
+                            <span> <i class="icon"></i> Tricks for layout, positioning and alignment.</span>
+                        </div>
+
+                        <!-- cards  -->
+                        <div>
+                            <a title="visit apple keyboard " href="Apple-Keyboard/index.html">
+                                <figure>
+                                    <img src="assets/Images/Keyboard.png" alt="apple keyboard">
+                                    <figcaption>
+                                        <p>apple keyboard</p>
+                                        <span>1</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit shelf " href="Shelf/index.html">
+                                <figure>
+                                    <img src="assets/Images/Shelf.png" alt="Shelf">
+                                    <figcaption>
+                                        <p>shelf</p>
+                                        <span>2</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                                <figure>
+                                    <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
+                                    <figcaption>
+                                        <p>hogwart's ticket</p>
+                                        <span>3</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- category 2 : transform -->
+                    <div id="Transform">
+
+                        <!-- title 2-->
+                        <div>
+                            <h4><i class="icon"></i>Transform</h4>
+                            <span> <i class="icon"></i>Creative transform effects and interactions.</span>
+                        </div>
+
+                        <!-- cards  -->
+                        <div>
+                            <a title="visit 3D-Button " href="3D-Button/index.html">
+                                <figure>
+                                    <img src="assets/Images/3D-Button.png" alt="3D-Button">
+                                    <figcaption>
+                                        <p>3D Button</p>
+                                        <span>1</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit World-Places " href="World-Places/index.html">
+                                <figure>
+                                    <img src="assets/Images/World-Places.png" alt="World-Places">
+                                    <figcaption>
+                                        <p>World Places</p>
+                                        <span>2</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <a title="visit Hamburger-Menu " href="Hamburger-Menu/index.html">
+                                <figure>
+                                    <img src="assets/Images/Hamburger-Menu.png" alt="Hamburger-Menu">
+                                    <figcaption>
+                                        <p>Hamburger-Menu</p>
+                                        <span>3</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Image-Gallery " href="Image-Gallery/index.html">
+                                <figure>
+                                    <img src="assets/Images/Image-Gallery.png" alt="Image-Gallery">
+                                    <figcaption>
+                                        <p>Image Gallery</p>
+                                        <span>4</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Book " href="Book/index.html">
+                                <figure>
+                                    <img src="assets/Images/Book.png" alt="Book">
+                                    <figcaption>
+                                        <p>Book</p>
+                                        <span>5</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Perspective-Text " href="Perspective-Text/index.html">
+                                <figure>
+                                    <img src="assets/Images/Perspective-Text.png" alt="Perspective-Text">
+                                    <figcaption>
+                                        <p>Perspective Text</p>
+                                        <span>6</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Steam-Games " href="Steam-Games/index.html">
+                                <figure>
+                                    <img src="assets/Images/Steam-Games.png" alt="Steam-Games">
+                                    <figcaption>
+                                        <p>Steam Games</p>
+                                        <span>7</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Action-Figures " href="Action-Figures/index.html">
+                                <figure>
+                                    <img src="assets/Images/Action-Figures.png" alt="Action-Figures">
+                                    <figcaption>
+                                        <p>Action Figures</p>
+                                        <span>8</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                            <a title="visit Congratulation-book " href="Congratulation-book/index.html">
+                                <figure>
+                                    <img src="assets/Images/Congratulation-book.png" alt="Congratulation-book">
+                                    <figcaption>
+                                        <p>Congratulation Note</p>
+                                        <span>9</span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- category 3 -->
+                    <!-- <div id="Animation"></div> -->
+
+
+                    <!-- category 4 -->
+                    <!-- <div></div> -->
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+            <!--==================#3-3 All Tricks HTML ==================-->
             <div id="collection">
                 <div>
-                    <h2>collection</h2>
+                    <h2><i class="icon"></i> All Tricks</h2>
                 </div>
                 <div>
                     <a title="visit apple keyboard " href="Apple-Keyboard/index.html">
@@ -328,31 +457,35 @@
                             </figcaption>
                         </figure>
                     </a>
-
-
-                    <!--================== NEW FILES HTML ==================-->
-                    <!--====================================================-->
-
-                    <!-- <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                    <a title="visit Action-Figures " href="Action-Figures/index.html">
                         <figure>
-                            <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
+                            <img src="assets/Images/Action-Figures.png" alt="Action-Figures">
                             <figcaption>
-                                <p>hogwart's ticket</p>
-                                <p>CSS grid train ticket design </p>
-                                <span>added:15 jul 2026</span>
+                                <p>Action Figures</p>
+                                <p>3D hover effect </p>
+                                <span>added:16 jul 2026</span>
                             </figcaption>
                         </figure>
-                    </a> -->
-                    <!-- <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
+                    </a>
+                    <a title="visit Congratulation-book " href="Congratulation-book/index.html">
                         <figure>
-                            <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
+                            <img src="assets/Images/Congratulation-book.png" alt="Congratulation-book">
                             <figcaption>
-                                <p>hogwart's ticket</p>
-                                <p>CSS grid train ticket design </p>
-                                <span>added:15 jun 2026</span>
+                                <p>Congratulation Note</p>
+                                <p>Fun 3D transform practice </p>
+                                <span>added:16 jun 2026</span>
                             </figcaption>
                         </figure>
-                    </a> -->
+                    </a>
+
+                    <!--=========================================================-->
+                    <!--=========================================================-->
+                    <!--=========================================================-->
+                    <!--==================== NEW FILES HTML =====================-->
+                    <!--=========================================================-->
+                    <!--=========================================================-->
+                    <!--=========================================================-->
+
                     <!-- <a title="visit hogwart's ticket " href="Hogwarts-Ticket/index.html">
                         <figure>
                             <img src="assets/Images/TICKET.png" alt="Hogwart's ticket">
