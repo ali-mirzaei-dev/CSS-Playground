@@ -1,0 +1,154 @@
+body {
+    background-color: #f3adea;
+}
+
+@keyframes widener {
+
+    0%,
+    100% {
+        width: 10px;
+    }
+
+    50%,
+    60% {
+        width: 200px;
+    }
+}
+
+@keyframes circler {
+
+    0%,
+    30% {
+        border-radius: 50%;
+    }
+
+    40%,
+    50% {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 8px;
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@keyframes jumper {
+    to {
+        transform: translateY(-30px);
+    }
+
+}
+
+@keyframes jumperLTR {
+
+    0% {
+        transform: translateX(0px) translateY(-30px);
+    }
+
+
+    33% {
+        transform: translateX(-200px) translateY(-30px);
+    }
+
+    66% {
+        transform: translateX(200px) translateY(-30px);
+    }
+
+
+    100% {
+        transform: translateY(-60px);
+    }
+}
+
+@keyframes swing {
+
+    33% {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    66% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes lower {
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes reseter {
+    from {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    to {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+}
+
+main {
+    margin: 200px auto;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: swing 2s linear 2.3s;
+
+    >div {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+
+        &:first-of-type {
+            background-color: whitesmoke;
+            animation: widener 1s ease,
+                circler 1s ease 1.2s forwards,
+                jumper 0.1s ease 2.2s forwards,
+                jumperLTR 2s linear 2.3s forwards,
+                lower 0.3s ease 4.6s forwards,
+                reseter 1s ease 4.8s forwards;
+        }
+    }
+}
+
+a {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    background-color: whitesmoke;
+    color: #f3adea !important;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+    text-transform: uppercase;
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+}

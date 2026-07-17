@@ -1,0 +1,315 @@
+body {
+    background-color: #1d1f20;
+}
+
+@keyframes word1 {
+
+    0% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    8.333%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+@keyframes word2 {
+
+    0%,
+    8.333% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    16.666%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+
+}
+
+@keyframes word3 {
+
+    0%,
+    16.666% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    24.99%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word4 {
+
+    0%,
+    24.999% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    33.32%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word5 {
+
+    0%,
+    33.32% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    41.65%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word6 {
+
+    0%,
+    41.65% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    49.98%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word7 {
+
+    0%,
+    49.98% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    58.31%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word8 {
+
+    0%,
+    58.31% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    66.64%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word9 {
+
+    0%,
+    66.64% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    76.97%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word10 {
+
+    0%,
+    74.97% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    83.3%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word11 {
+
+    0%,
+    83.3% {
+        opacity: 0;
+        transform: translateY(8px) scale(0.9);
+    }
+
+    91.63%,
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes word12 {
+
+    0% {
+        left: 14.5%;
+    }
+
+    8.333% {
+        left: 21.5%;
+    }
+
+    16.666% {
+        left: 28.5%;
+    }
+
+    24.999% {
+        left: 34.5%;
+    }
+
+    33.32% {
+        left: 40.5%;
+    }
+
+    41.65% {
+        left: 51.5%;
+    }
+
+    49.98% {
+        left: 60.5%;
+    }
+
+    58.31% {
+        left: 67.5%;
+    }
+
+    66.64% {
+        left: 74.5%;
+    }
+
+    74.97% {
+        left: 81%;
+    }
+
+    83.3% {
+        left: 86.6%;
+    }
+
+    91.63%,
+    100% {
+        left: 90.6%;
+    }
+}
+
+@keyframes bliper {
+    50% {
+        opacity: 0;
+    }
+}
+
+main {
+    margin: 100px auto;
+    width: 1100px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    position: relative;
+
+    >span {
+        color: goldenrod;
+        font-size: 90px;
+        text-transform: uppercase;
+        opacity: 0;
+        text-shadow:
+            0 0 8px rgba(218, 165, 32, .3),
+            0 0 18px rgba(218, 165, 32, .15);
+
+        &:first-of-type {
+            animation: word1 5s ease-out forwards;
+        }
+
+        &:nth-of-type(2) {
+            animation: word2 5s ease-out forwards;
+        }
+
+        &:nth-of-type(3) {
+            animation: word3 5s ease-out forwards;
+        }
+
+        &:nth-of-type(4) {
+            animation: word4 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(5) {
+            animation: word5 5s ease-out forwards;
+            margin-right: 30px;
+        }
+
+        &:nth-of-type(6) {
+            animation: word6 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(7) {
+            animation: word7 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(8) {
+            animation: word8 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(9) {
+            animation: word9 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(10) {
+            animation: word10 5s ease-out forwards;
+
+        }
+
+        &:nth-of-type(11) {
+            animation: word11 5s ease-out forwards;
+
+        }
+
+        &:last-of-type {
+            animation: word12 5s steps(1) forwards,
+                bliper 0.8s steps(1) 5s infinite;
+            width: 10px;
+            height: 85px;
+            background-color: white;
+            position: absolute;
+            opacity: 1;
+            left: 14.5%;
+            border-radius: 3px;
+        }
+
+        animation-fill-mode: forwards;
+    }
+}
