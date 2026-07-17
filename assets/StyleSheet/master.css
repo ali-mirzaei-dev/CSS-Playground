@@ -496,7 +496,6 @@
 
                         >div {
 
-                            >h2 {}
 
                             &:last-of-type {
                                 display: flex;
@@ -565,7 +564,7 @@
                                             height: 140px;
 
                                             figcaption {
-                                                bottom: -30px;
+                                                bottom: -35px;
                                             }
 
                                             &::before {
@@ -674,16 +673,18 @@
                                             >a {
                                                 width: 23%;
                                                 max-width: 250px;
+                                                height: 150px;
                                                 transition: 0.4s;
                                                 display: flex;
                                                 justify-content: center;
-                                                align-items: center;
+                                                align-items: start;
                                                 border-radius: 10px;
 
                                                 >figure {
                                                     border: 1px solid rgba(105, 117, 101, 0.7);
                                                     border-radius: 10px;
                                                     width: 250px;
+                                                    height: 100%;
                                                     display: flex;
                                                     flex-wrap: wrap;
                                                     row-gap: 10px;
@@ -694,13 +695,16 @@
 
                                                     >img {
                                                         width: 100%;
-                                                        height: 100%;
+                                                        height: 80%;
                                                         object-fit: cover;
                                                         border-radius: 10px 10px 0 0;
                                                     }
 
                                                     >figcaption {
                                                         width: 100%;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: start;
 
                                                         >p {
                                                             color: var(--cream);
@@ -745,18 +749,15 @@
                                         }
                                     }
 
-
-
-
-
-
                                     /* category 1 */
                                     &:first-of-type {
                                         border-bottom: 2px solid var(--green);
                                     }
 
                                     /* category 2 */
-                                    &:nth-of-type(2) {}
+                                    &:nth-of-type(2) {
+                                        border-bottom: 2px solid var(--green);
+                                    }
 
                                     /* category 3 */
                                     &:nth-of-type(3) {}
